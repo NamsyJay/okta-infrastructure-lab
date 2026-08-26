@@ -1,3 +1,6 @@
+# “This experiment demonstrates why accelerator selection should depend on workload characteristics rather than simply assigning GPUs to all AI workloads.”
+
+
 ### Problem: AI workloads involve highly parallel numerical computation.
 
 ### Hypothesis: GPUs should outperform CPUs as parallel workload size increases.
