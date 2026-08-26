@@ -27,5 +27,6 @@ My questions are changing:
 
 It is now:
 "Which GPU, how much VRAM, how many GPUs, and for what workload?"
+
 '''
 
