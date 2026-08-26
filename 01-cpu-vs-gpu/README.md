@@ -13,10 +13,10 @@ GPU → VRAM
 - Model parallelism becomes necessary when, for example, the model is too large to fit into the VRAM of one GPU, so parts of the model are distributed across multiple GPUs.
 - High throughput means we're optimizing for doing a huge amount of computational work in a given period—not necessarily making one individual instruction execute faster.
 
-High-Performance Computing (HPC)
+### High-Performance Computing (HPC) aggregates computing power—typically through clustered server nodes—to process complex mathematical models, large-scale simulations, and massive data workloads far beyond the capabilities of standard enterprise servers.
 
-AI infrastructure thinking
-When running an AI model, things such as the model weights, activations and other intermediate data consume GPU memory.
+## AI infrastructure thinking
+- When running an AI model, things such as the model weights, activations and other intermediate data consume GPU memory.
 
 ## Obstacles
 - A GPU can be computationally powerful enough for a model but not have enough VRAM to hold what the workload requires.
