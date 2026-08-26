@@ -5,14 +5,14 @@
 
 
 
-### Problem: AI workloads involve highly parallel numerical computation.
+### - Problem: AI workloads involve highly parallel numerical computation.
 
-### Hypothesis: GPUs should outperform CPUs as parallel workload size increases.
+### - Hypothesis: GPUs should outperform CPUs as parallel workload size increases.
 
-### Experiment: Execute identical matrix operations using CPU and GPU.
+### - Experiment: Execute identical matrix operations using CPU and GPU.
 
-### Measurements: execution time, GPU model, VRAM, workload size.
+### - Measurements: execution time, GPU model, VRAM, workload size.
 
-### Results: your actual measurements.
+### - Results: your actual measurements.
 
-### Engineering takeaway: explain when GPU acceleration helped, when it didn't, and why
+### - Engineering takeaway: explain when GPU acceleration helped, when it didn't, and why
