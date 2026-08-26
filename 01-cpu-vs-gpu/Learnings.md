@@ -1,6 +1,7 @@
 ## THE GOAL: Why would I deploy an AI workload on a GPU instead of a CPU?
 ### Today’s small action: learn the CPU → GPU mental model. Spend 20–30 minutes understanding just four concepts: CPU, GPU, VRAM, and why AI workloads benefit from parallel processing.
 
+
 - CPU: relatively few powerful workers, excellent at complicated/sequential/general-purpose tasks.
 - GPU: thousands of smaller workers capable of doing enormous numbers of similar mathematical operations simultaneously.
 - VRAM: A GPU has its own high-speed memory.
@@ -26,5 +27,7 @@ GPU → VRAM
 
 - It is now:
   "Which GPU, how much VRAM, how many GPUs, and for what workload?"
+
+
 
 
