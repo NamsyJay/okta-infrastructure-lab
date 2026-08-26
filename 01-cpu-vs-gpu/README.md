@@ -21,12 +21,10 @@ When running an AI model, things such as the model weights, activations and othe
 ## Obstacles
 - A GPU can be computationally powerful enough for a model but not have enough VRAM to hold what the workload requires.
 
-'''
-My questions are changing:
-"Do I need a GPU?"
+- My questions are changing:
+  "Do I need a GPU?"
 
-It is now:
-"Which GPU, how much VRAM, how many GPUs, and for what workload?"
+- It is now:
+  "Which GPU, how much VRAM, how many GPUs, and for what workload?"
 
-'''
 
