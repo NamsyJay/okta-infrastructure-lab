@@ -50,8 +50,9 @@ This provides a simple way to observe how workload size and parallel computation
              └─────────┬─────────┘
                        │
                     Compare
+``` 
 
-##Lab Environments
+## Lab Environments
 CPU Environment
 Linux
 Python
@@ -71,6 +72,7 @@ GPU execution
 ## Experiment 1 — Understanding Tensors
 ### The project began with two small 2×2 tensors:
 
+```text
 import torch
 
 a = torch.tensor([[1.0, 2.0], [3.0, 4.0]])
@@ -80,7 +82,9 @@ result = torch.matmul(a, b)
 
 print(result)
 print("Device:", result.device)
+```
 
+```text
 PyTorch
    ↓
 Tensor
@@ -90,10 +94,12 @@ CPU
 RAM
    ↓
 Computation
+```
 
 ## Experiment 2 — Moving the Workload to GPU
 ### The tensors were then explicitly transferred to the CUDA device:
 
+```text
 a = a.to("cuda")
 b = b.to("cuda")
 
@@ -112,6 +118,7 @@ Tensor A device: cuda:0
 Tensor B device: cuda:0
 
 Result device: cuda:0
+```
 
 - This demonstrated an important infrastructure principle:
   - GPU availability does not automatically mean GPU utilization.
@@ -124,7 +131,7 @@ Result device: cuda:0
 - 2,500 × 2,500
 - 5,000 × 5,000
 
-
+```text
 |   Matrix Size |  Local CPU |  NVIDIA T4 | Approx. Speedup |
 | ------------: | ---------: | ---------: | --------------: |
 |     100 × 100 | 0.000494 s | 0.000351 s |            1.4× |
@@ -132,7 +139,7 @@ Result device: cuda:0
 | 1,000 × 1,000 | 0.026101 s | 0.000545 s |           47.9× |
 | 2,500 × 2,500 | 0.422842 s | 0.004550 s |           92.9× |
 | 5,000 × 5,000 | 3.915636 s | 0.079346 s |           49.3× |
-
+```
 
 ### These are initial single-run measurements across two different compute environments. They demonstrate the experiment but should not be interpreted as a general CPU-vs-GPU performance claim.
 
@@ -151,8 +158,10 @@ Provisioning a GPU does not automatically move application workloads onto it.
 ## 4. VRAM is an infrastructure resource
 ### GPU workloads introduce another important capacity constraint:
 
+```text
 CPU ↔ System RAM
 GPU ↔ VRAM
+```
 
 Compute capability alone is therefore not enough when selecting accelerator infrastructure.
 
@@ -161,8 +170,9 @@ Compute capability alone is therefore not enough when selecting accelerator infr
 ### GPU operations can execute asynchronously.
 Accurate timing requires synchronization:
 
+```text
 torch.cuda.synchronize()
-
+```
 Without synchronization, benchmark results can be misleading.
 
 
