@@ -54,19 +54,19 @@ This provides a simple way to observe how workload size and parallel computation
 
 ## Lab Environments
 CPU Environment
-Linux
-Python
-PyTorch
-CPU execution
-System RAM
+- Linux
+- Python
+- PyTorch
+- CPU execution
+- System RAM
 
 ## GPU Environment
-Lightning AI Studio
-NVIDIA Tesla T4
-CUDA
-PyTorch
-16 GB-class GPU memory
-GPU execution
+- Lightning AI Studio
+- NVIDIA Tesla T4
+- CUDA
+- PyTorch
+- 16 GB-class GPU memory
+- GPU execution
 
 
 ## Experiment 1 — Understanding Tensors
@@ -141,7 +141,7 @@ Result device: cuda:0
 | 5,000 × 5,000 | 3.915636 s | 0.079346 s |           49.3× |
 ```
 
-### These are initial single-run measurements across two different compute environments. They demonstrate the experiment but should not be interpreted as a general CPU-vs-GPU performance claim.
+These are initial single-run measurements across two different compute environments. They demonstrate the experiment but should not be interpreted as a general CPU-vs-GPU performance claim.
 
 
 ## What I Learned
