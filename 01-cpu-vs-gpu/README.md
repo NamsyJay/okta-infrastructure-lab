@@ -176,3 +176,30 @@ torch.cuda.synchronize()
 Without synchronization, benchmark results can be misleading.
 
 
+## Experiment 4 — Data Transfer Overhead
+The next experiment compares:
+
+```text
+GPU COMPUTE ONLY
+
+VRAM
+  ↓
+GPU
+  ↓
+Computation
+```
+
+```text
+END-TO-END GPU PATH
+
+CPU RAM
+   ↓
+Host → Device Transfer
+   ↓
+VRAM
+   ↓
+GPU
+   ↓
+Computation
+```
+
