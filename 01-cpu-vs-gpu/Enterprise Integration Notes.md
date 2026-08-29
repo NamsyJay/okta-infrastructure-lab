@@ -3,7 +3,6 @@ CPU vs GPU Project
 
 ## "I don't blindly throw GPUs at problems"
 
-# Enterprise Integration Notes
 ### Business Context
 
 Enterprises deploying AI workloads must decide when accelerator infrastructure is justified.
