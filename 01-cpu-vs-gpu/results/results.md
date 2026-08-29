@@ -2,8 +2,10 @@
   
 # Results
 
-### What I expected
-### What actually happened
-### Why it happened (root cause, not just symptom)
-### How I diagnosed it (what commands, what output told me)
-### What I changed
+#### **Performance:** What does this improve?
+
+#### **Cost:** What does this cost/save?
+
+#### **Risk:** What can go wrong?
+
+#### **Scale:** What changes when 1 workload becomes 1,000?
