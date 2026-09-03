@@ -4,12 +4,12 @@
 
 ## Objectives
 
-- Containerize PyTorch CUDA Runtimes: Build lightweight, multi-stage Docker images using official NVIDIA CUDA base images.
+1. Containerize PyTorch CUDA Runtimes: Build lightweight, multi-stage Docker images using official NVIDIA CUDA base images.
 
-- Configure GPU Runtime Passthrough: Leverage nvidia-container-toolkit to pass GPU devices into isolated container environments.
+2. Configure GPU Runtime Passthrough: Leverage nvidia-container-toolkit to pass GPU devices into isolated container environments.
 
-- Validate VRAM & Compute Allocation: Ensure proper device visiblity, isolated CUDA allocation, and execution inside container boundaries.
+3. Validate VRAM & Compute Allocation: Ensure proper device visiblity, isolated CUDA allocation, and execution inside container boundaries.
 
-- Prepare Observability Hooks: Expose CUDA/DCGM metrics for Prometheus scraping to track VRAM consumption and GPU compute utilization.
+4. Prepare Observability Hooks: Expose CUDA/DCGM metrics for Prometheus scraping to track VRAM consumption and GPU compute utilization.
 
-- Stage for Kubernetes/EKS: Ensure container entrypoints and environment flags comply with Kubernetes [nvidia.com/gpu](https://nvidia.com/gpu) resource scheduling constraints.
+5. Stage for Kubernetes/EKS: Ensure container entrypoints and environment flags comply with Kubernetes [nvidia.com/gpu](https://nvidia.com/gpu) resource scheduling constraints.
