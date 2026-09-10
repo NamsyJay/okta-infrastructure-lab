@@ -1,10 +1,13 @@
 ## Reproducible MLflow experiment
 
-### Aim: Compare Three visible MLflow runs.
+### Aim: 
+- Compare Three visible MLflow runs.
 
-### Outcome:An enterprise must know which training run produced it, which parameters were used, what metrics justified the decision and which artifacts belong to that run.
+### Outcome:
+- An enterprise must know which training run produced it, which parameters were used, what metrics justified the decision and which artifacts belong to that run.
 
-### Experiment: Take one simple ML model and use MLflow to track three training runs where you change only one parameter between runs.
+### Experiment: 
+- Take one simple ML model and use MLflow to track three training runs where you change only one parameter between runs.
 
 ## Core Business Value
 #### 1. Regulatory Compliance & Audit Readiness
@@ -19,4 +22,4 @@ In a team of 15 data scientists:
 - Team members can build on each other's work instead of duplicating experiments or starting from scratch.
 - When someone leaves the company, their experimental history doesn't leave with them
 
-Business outcome: Faster onboarding, reduced redundant compute costs, and accelerated time-to-production for new models
+Business outcome: Faster on-boarding, reduced redundant compute costs, and accelerated time-to-production for new models
