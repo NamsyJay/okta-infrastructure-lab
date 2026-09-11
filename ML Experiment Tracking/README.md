@@ -1,4 +1,5 @@
-<img width="1408" height="768" alt="Gemini_Generated_Image_j4guadj4guadj4gu" src="https://github.com/user-attachments/assets/d49c6f21-7ccf-42cd-b749-2d1a7d06fe37" />
+<img width="1408" height="768" alt="Gemini_Generated_Image_lyco6llyco6llyco" src="https://github.com/user-attachments/assets/24a8a469-aefb-4b77-9c67-5f5b8b859b36" />
+
 
 
 ## MLflow, Experiments, Metrics, Artifacts
