@@ -1,1 +1,0 @@
-## Model Lifecycle and Promotion
